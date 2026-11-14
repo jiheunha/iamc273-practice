@@ -1,5 +1,5 @@
 // Keeps the page on the phone so the home-screen app opens offline. A new build has a new cache name.
-var C = 'iamc273-202611142140-0c405381';
+var C = 'iamc273-202611142207-78c5e8ad';
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(C).then(function (c) { return c.addAll(['./', 'icon-180.png']); }).then(function () { return self.skipWaiting(); }));
 });
